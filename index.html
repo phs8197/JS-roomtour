@@ -4,36 +4,63 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/clock.css" />
+    <link rel="stylesheet" href="css/todo.css" />
+    <link rel="stylesheet" href="css/login.css" />
     <title>Momentum App</title>
   </head>
   <body>
-    <h2 id="clock">00:00:00</h2>
-    <form id="login-form" class="hidden">
-      <input
-        required
-        maxlength="15"
-        type="text"
-        placeholder="What is your name?"
-      />
-      <button>Log In</button>
-    </form>
-    <h1 id="greeting" class="hidden"></h1>
-    <form id="todo-form">
-      <input type="text" placeholder="Write a To do and Press Enter" required />
-    </form>
-    <ul id="todo-list"></ul>
-    <div id="quote">
-      <span></span>
-      <span></span>
+    <div id="container-box">
+      <div id="image-box">
+        <img src="img/room.jpeg" />
+        <div class="play-btn"></div>
+        <div class="google-btn"></div>
+        <div class="todolist-btn"></div>
+        <div class="clock-btn"></div>
+        <div class="calendar-btn"></div>
+      </div>
+      <form id="login-form">
+        <input
+          required
+          maxlength="15"
+          type="text"
+          placeholder="What is your name?"
+        />
+        <button>Log In</button>
+      </form>
+      <h1 id="greeting"></h1>
+
+      <div class="popup hidden" id="clock-popup">
+        <button class="closed-btn" id="clock-closed">
+          <span class="material-symbols-outlined"> close </span>
+        </button>
+        <h2 id="clock">00:00:00</h2>
+      </div>
+      <div class="popup hidden" id="todo-popup">
+        <button class="closed-btn" id="todo-closed">
+          <span class="material-symbols-outlined"> close </span>
+        </button>
+        <div id="todolist-box">
+          <form id="todo-form">
+            <input type="text" placeholder="Write a To do" required />
+          </form>
+          <ul id="todo-list"></ul>
+        </div>
+      </div>
+      <div id="weather">
+        <span></span>
+        <span></span>
+      </div>
+      -->
     </div>
-    <div id="weather">
-      <span></span>
-      <span></span>
-    </div>
+
     <script src="js/greetings.js"></script>
     <script src="js/clock.js"></script>
-    <script src="js/quotes.js"></script>
     <script src="js/background.js"></script>
     <script src="js/todo.js"></script>
     <script src="js/weather.js"></script>

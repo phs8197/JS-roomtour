@@ -52,3 +52,18 @@ if (savedTodos !== null) {
   toDos = parsedTodos;
   parsedTodos.forEach(paintToDo);
 }
+
+const popupTodo = document.querySelector("#todo-popup");
+const todoBtn = document.querySelector(".todolist-btn");
+const closedTodo = document.querySelector("#todo-closed");
+
+function handlePopup() {
+  popupTodo.classList.remove("hidden");
+}
+
+todoBtn.addEventListener("click", handlePopup);
+
+function handleClosed() {
+  popupTodo.classList.add("hidden");
+}
+closedTodo.addEventListener("click", handleClosed);

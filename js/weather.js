@@ -1,4 +1,4 @@
-const API = "5f57a8da8a6f25d23c30934106791e90";
+/*const API = "5f57a8da8a6f25d23c30934106791e90";
 
 function onGeoOk(position) {
   console.dir(position);
@@ -18,3 +18,4 @@ function onGeoError() {
   alert("Can't find you. No weather for you.");
 }
 navigator.geolocation.getCurrentPosition(onGeoOk, onGeoError);
+*/

@@ -13,12 +13,3 @@ const Color1 = colors[Math.floor(Math.random() * colors.length)];
 const Color2 = colors[Math.floor(Math.random() * colors.length)];
 body.style.background = `linear-gradient(90deg,${Color1},${Color2})`;
 body.style.fillOpacity = "50%";
-/*const chosenImage = images[Math.floor(Math.random() * images.length)];
-
-const bgImage = document.createElement("img");
-
-bgImage.src = `img/${chosenImage}`;
-
-console.log(bgImage);
-
-document.body.appendChild(bgImage);*/

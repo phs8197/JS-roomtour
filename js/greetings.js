@@ -27,3 +27,5 @@ if (savedUsername === null) {
 } else {
   paintGreetings(savedUsername);
 }
+console.dir(loginForm.classList);
+console.dir(greeting.classList);
