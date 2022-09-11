@@ -1,0 +1,20 @@
+.screen-header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  box-sizing: border-box;
+}
+
+.screen-header span {
+  margin-top: 35px;
+  font-size: 20px;
+}
+
+.screen-header span:first-child {
+  margin-left: 20px;
+}
+
+.screen-header span:nth-child(2) {
+  margin-right: 20px;
+  font-size: 24px;
+}

@@ -1,13 +1,12 @@
 #login-form {
   position: absolute;
   z-index: 20;
-  justify-content: center;
-  align-items: center;
-  top: 110px;
+  top: 120px;
 }
 #login-form input {
-  width: 400px;
+  width: 350px;
   height: 50px;
+  z-index: 20;
   border: 2px solid white;
   border-top: none;
   border-left: none;
@@ -15,7 +14,15 @@
   font-size: 25px;
   font-family: Montserrat, Arial, Helvetica, sans-serif;
   font-weight: 400;
+  outline: none;
   background-color: transparent;
+}
+#login-form input:focus {
+  border: 2px solid #8a877e;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  transition: 0.2s ease-in-out;
 }
 #login-form input::placeholder {
   color: white;
@@ -23,6 +30,7 @@
 }
 
 #login-form button {
+  display: inline;
   background-color: none;
   border: none;
   width: 100px;
@@ -35,12 +43,9 @@
 }
 
 #greeting {
-  display: flex;
   position: absolute;
-  z-index: 40;
-  justify-content: center;
-  align-items: center;
-  top: 100px;
+  z-index: 20;
+  top: 110px;
   font-size: 40px;
   font-family: Montserrat, Arial, Helvetica, sans-serif;
   font-weight: 600;

@@ -1,0 +1,53 @@
+.calendar-box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+    color:white;
+    height:70%;
+
+
+    -webkit-user-select:none;
+    -moz-user-select:none;
+    -ms-user-select:none;
+    user-select:none;
+}
+
+.calendar-header{
+    display:flex;
+    justify-content: space-between;
+    width: 500px;
+    font-size: 36px;
+
+}
+
+.calendar-body{
+    table-layout: fixed;
+    margin: 50px;
+    width: 800px;
+    font-size: 20px;
+    text-align: center;
+}
+
+.calendar-line{
+    height: 80px;
+}
+
+.calendar-move-btn{
+    cursor: pointer;
+}
+
+td:first-child,
+th:first-child{
+    color:red
+}
+
+td:last-child,
+th:last-child{
+    color:blue
+}
+
+#calendar-today{
+    background-color: white;
+    color:gray;
+}

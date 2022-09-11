@@ -1,0 +1,113 @@
+.playlist-component {
+  width: 240px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 25px;
+}
+.playlist-component:hover {
+  width: 260px;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  box-shadow: 0px 5px 7px rgba(163, 163, 163, 0.2);
+  border-radius: 12px;
+}
+
+.playlist-component .playlist-component_column {
+  display: flex;
+  height: 50px;
+  align-items: center;
+}
+.playlist-component .playlist-component_column:first-child {
+  margin: 0px 15px 0px 10px;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+.playlist-component .playlist-component_column:first-child img {
+  border-radius: 8px;
+  width: 42px;
+  height: 42px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.music_chart {
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  width: 18px;
+  height: 16px;
+  margin-top: 4px;
+}
+.music_icon {
+  width: 4px;
+  height: 100%;
+  border-radius: 2px;
+  background-color: white;
+  content: "";
+  animation: bounce 1.3s ease infinite alternate;
+}
+@keyframes bounce {
+  10% {
+    transform: scaleY(0.3); /* start by scaling to 30% */
+  }
+
+  30% {
+    transform: scaleY(1); /* scale up to 100% */
+  }
+
+  60% {
+    transform: scaleY(0.5); /* scale down to 50% */
+  }
+
+  80% {
+    transform: scaleY(0.75); /* scale up to 75% */
+  }
+
+  100% {
+    transform: scaleY(0.6); /* scale down to 60% */
+  }
+}
+.music_chart .music_icon:nth-child(2) {
+  animation-delay: -2.2s;
+}
+.music_chart .music_icon:nth-child(3) {
+  animation-delay: 3.4s;
+}
+.music_icon {
+  opacity: 0;
+  position: absolute;
+  transition: opacity 0.01s;
+}
+
+.playlist-component:hover .music_icon {
+  opacity: 1;
+  position: static;
+}
+
+.playlist-component .playlist-component_column:nth-child(2) {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: flex-start;
+}
+.playlist-component .playlist-component_column:nth-child(3) {
+  color: #a8a8a8;
+  margin-left: auto;
+  margin-right: flex-end;
+}
+.playlist-component .playlist-component_column:nth-child(2) span:first-child {
+  font-size: 12px;
+  color: #a8a8a8;
+  font-weight: 500;
+  margin: 2px 0px;
+}
+.playlist-component .playlist-component_column:nth-child(2) span:nth-child(2) {
+  font-size: 15px;
+  font-weight: 600;
+  margin: 2px 0px;
+}

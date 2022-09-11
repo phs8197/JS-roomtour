@@ -12,12 +12,15 @@
     <link rel="stylesheet" href="css/clock.css" />
     <link rel="stylesheet" href="css/todo.css" />
     <link rel="stylesheet" href="css/login.css" />
+    <link rel="stylesheet" href="css/calendar.css" />
+    <link rel="stylesheet" href="css/weather.css" />
     <title>Momentum App</title>
   </head>
   <body>
+    <h3>The screen is too smallㅠㅠ</h3>
     <div id="container-box">
       <div id="image-box">
-        <img src="img/room.jpeg" />
+        <img src="image/room.jpeg" />
         <div class="play-btn"></div>
         <div class="google-btn"></div>
         <div class="todolist-btn"></div>
@@ -52,17 +55,337 @@
           <ul id="todo-list"></ul>
         </div>
       </div>
+      <div class="popup hidden" id="calendar-popup">
+        <button class="closed-btn" id="calendar-closed">
+          <span class="material-symbols-outlined"> close </span>
+        </button>
+        <div class="calendar-box">
+          <div class="calendar-header">
+            <div class="calendar-move-btn" id="go-prev">
+              <span class="material-symbols-outlined"> arrow_back_ios </span>
+            </div>
+            <div id="calendar-year-month">SEP, 2022</div>
+            <div class="calendar-move-btn" id="go-next">
+              <span class="material-symbols-outlined"> arrow_forward_ios </span>
+            </div>
+          </div>
+          <table class="calendar-body">
+            <thead>
+              <th>SUN</th>
+              <th>MON</th>
+              <th>TUE</th>
+              <th>WED</th>
+              <th>THU</th>
+              <th>FRI</th>
+              <th>SAT</th>
+            </thead>
+            <tbody>
+              <tr class="calendar-line">
+                <td class="calendar-day"></td>
+                <td class="calendar-day"></td>
+                <td class="calendar-day"></td>
+                <td class="calendar-day"></td>
+                <td class="calendar-day"></td>
+                <td class="calendar-day"></td>
+                <td class="calendar-day"></td>
+              </tr>
+              <tr class="calendar-line">
+                <td class="calendar-day"></td>
+                <td class="calendar-day"></td>
+                <td class="calendar-day"></td>
+                <td class="calendar-day"></td>
+                <td class="calendar-day"></td>
+                <td class="calendar-day"></td>
+                <td class="calendar-day"></td>
+              </tr>
+              <tr class="calendar-line">
+                <td class="calendar-day"></td>
+                <td class="calendar-day"></td>
+                <td class="calendar-day"></td>
+                <td class="calendar-day"></td>
+                <td class="calendar-day"></td>
+                <td class="calendar-day"></td>
+                <td class="calendar-day"></td>
+              </tr>
+              <tr class="calendar-line">
+                <td class="calendar-day"></td>
+                <td class="calendar-day"></td>
+                <td class="calendar-day"></td>
+                <td class="calendar-day"></td>
+                <td class="calendar-day"></td>
+                <td class="calendar-day"></td>
+                <td class="calendar-day"></td>
+              </tr>
+              <tr class="calendar-line">
+                <td class="calendar-day"></td>
+                <td class="calendar-day"></td>
+                <td class="calendar-day"></td>
+                <td class="calendar-day"></td>
+                <td class="calendar-day"></td>
+                <td class="calendar-day"></td>
+                <td class="calendar-day"></td>
+              </tr>
+              <tr class="calendar-line">
+                <td class="calendar-day"></td>
+                <td class="calendar-day"></td>
+                <td class="calendar-day"></td>
+                <td class="calendar-day"></td>
+                <td class="calendar-day"></td>
+                <td class="calendar-day"></td>
+                <td class="calendar-day"></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
       <div id="weather">
         <span></span>
         <span></span>
       </div>
-      -->
+      <div class="popup hidden" id="google-popup">
+        <button class="closed-btn" id="google-closed">
+          <span class="material-symbols-outlined"> close </span>
+        </button>
+        <iframe
+          id="inlineFrame"
+          width="1000"
+          height="700"
+          src="https://nomadcoders.co/"
+        >
+        </iframe>
+      </div>
+      <div class="popup hidden" id="play-popup">
+        <div class="play-first_column">
+          <button class="closed-btn" id="play-closed">
+            <span class="material-symbols-outlined"> close </span>
+          </button>
+        </div>
+        <div class="play-second_column">
+          <div class="main-screen">
+            <div class="screen-header">
+              <span class="material-symbols-outlined">
+                arrow_back_ios_new
+              </span>
+              <span class="material-symbols-outlined"> search </span>
+            </div>
+            <div class="main-screen_player">
+              <div class="main-screen_image">
+                <div class="colorfulShadow artist"></div>
+              </div>
+            </div>
+            <div class="main-screen_text">
+              <span>Grace lee, Artist</span>
+              <span>Rap, Hip-hop</span>
+            </div>
+            <div class="main-screen_btn">
+              <button>Shuffle</button>
+              <button>
+                <span class="material-symbols-outlined"> favorite </span>
+                <span>212,971</span>
+              </button>
+            </div>
+            <div class="main-screen_playlist">
+              <div class="playlist-component">
+                <div class="playlist-component_column">
+                  <img src="image/g.jpg" />
+                  <div class="music_chart">
+                    <div class="music_icon"></div>
+                    <div class="music_icon"></div>
+                    <div class="music_icon"></div>
+                  </div>
+                </div>
+                <div class="playlist-component_column">
+                  <span>Grace lee, Artist</span>
+                  <span>Hey Mama</span>
+                </div>
+                <div class="playlist-component_column">
+                  <span class="material-symbols-outlined"> more_vert </span>
+                </div>
+              </div>
+              <div class="playlist-component">
+                <div class="playlist-component_column">
+                  <img src="image/c.jpg" />
+                  <div class="music_chart">
+                    <div class="music_icon"></div>
+                    <div class="music_icon"></div>
+                    <div class="music_icon"></div>
+                  </div>
+                </div>
+                <div class="playlist-component_column">
+                  <span>Grace lee, Artist</span>
+                  <span>December</span>
+                </div>
+                <div class="playlist-component_column">
+                  <span class="material-symbols-outlined"> more_vert </span>
+                </div>
+              </div>
+              <div class="playlist-component">
+                <div class="playlist-component_column">
+                  <img src="image/d.jpg" />
+                  <div class="music_chart">
+                    <div class="music_icon"></div>
+                    <div class="music_icon"></div>
+                    <div class="music_icon"></div>
+                  </div>
+                </div>
+                <div class="playlist-component_column">
+                  <span>Grace lee, Artist</span>
+                  <span>Call me</span>
+                </div>
+                <div class="playlist-component_column">
+                  <span class="material-symbols-outlined"> more_vert </span>
+                </div>
+              </div>
+              <div class="playlist-component">
+                <div class="playlist-component_column">
+                  <img src="image/f.jpg" />
+                  <div class="music_chart">
+                    <div class="music_icon"></div>
+                    <div class="music_icon"></div>
+                    <div class="music_icon"></div>
+                  </div>
+                </div>
+                <div class="playlist-component_column">
+                  <span>Grace lee, Artist</span>
+                  <span>Summer-vacation</span>
+                </div>
+                <div class="playlist-component_column">
+                  <span class="material-symbols-outlined"> more_vert </span>
+                </div>
+              </div>
+              <div class="playlist-component">
+                <div class="playlist-component_column">
+                  <img src="image/c.jpg" />
+                  <div class="music_chart">
+                    <div class="music_icon"></div>
+                    <div class="music_icon"></div>
+                    <div class="music_icon"></div>
+                  </div>
+                </div>
+                <div class="playlist-component_column">
+                  <span>Grace lee, Artist</span>
+                  <span>December</span>
+                </div>
+                <div class="playlist-component_column">
+                  <span class="material-symbols-outlined"> more_vert </span>
+                </div>
+              </div>
+              <div class="playlist-component">
+                <div class="playlist-component_column">
+                  <img src="image/d.jpg" />
+                  <div class="music_chart">
+                    <div class="music_icon"></div>
+                    <div class="music_icon"></div>
+                    <div class="music_icon"></div>
+                  </div>
+                </div>
+                <div class="playlist-component_column">
+                  <span>Grace lee, Artist</span>
+                  <span>Call me</span>
+                </div>
+                <div class="playlist-component_column">
+                  <span class="material-symbols-outlined"> more_vert </span>
+                </div>
+              </div>
+              <div class="playlist-component">
+                <div class="playlist-component_column">
+                  <img src="image/f.jpg" />
+                  <div class="music_chart">
+                    <div class="music_icon"></div>
+                    <div class="music_icon"></div>
+                    <div class="music_icon"></div>
+                  </div>
+                </div>
+                <div class="playlist-component_column">
+                  <span>Grace lee, Artist</span>
+                  <span>Summer-vacation</span>
+                </div>
+                <div class="playlist-component_column">
+                  <span class="material-symbols-outlined"> more_vert </span>
+                </div>
+              </div>
+              <div class="playlist-component">
+                <div class="playlist-component_column">
+                  <img src="image/f.jpg" />
+                  <div class="music_chart">
+                    <div class="music_icon"></div>
+                    <div class="music_icon"></div>
+                    <div class="music_icon"></div>
+                  </div>
+                </div>
+                <div class="playlist-component_column">
+                  <span>Grace lee, Artist</span>
+                  <span>Summer-vacation</span>
+                </div>
+                <div class="playlist-component_column">
+                  <span class="material-symbols-outlined"> more_vert </span>
+                </div>
+              </div>
+              <div class="main-screen_playbar">
+                <div class="playbar_column">
+                  <span>Grace lee, Artist</span>
+                  <span>December</span>
+                </div>
+                <div class="playbar_column">
+                  <span class="material-symbols-outlined"> skip_previous </span>
+                  <span class="material-symbols-outlined"> play_arrow </span>
+                  <span class="material-symbols-outlined"> skip_next </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        
+        <div class="play-screen">
+          <div class="screen-header">
+            <span class="material-symbols-outlined"> arrow_back_ios_new </span>
+            <span class="material-symbols-outlined"> search </span>
+          </div>
+          <div class="play-screen_player">
+            <div class="play-screen_image">
+              <div class="colorfulShadow album"></div>
+            </div>
+            <div class="play-screen_text">
+              <span>December</span>
+              <span>Grace lee, Artist</span>
+            </div>
+          </div>
+          <div class="play-screen_track">
+            <div class="play-screen_progress">
+              <div class="progress_time">
+                <span id="current-time"></span>
+                <span id="duration-time"></span>
+              </div>
+              <div class="progress_line">
+                <div class="progress_black">
+                  <div class="progress_dot"></div>
+                </div>
+              </div>
+            </div>
+            <div class="play-screen_controls">
+              <span class="material-symbols-outlined"> all_inclusive </span>
+              <span class="material-symbols-outlined"> skip_previous </span>
+              <span class="material-symbols-outlined" id="music_play">
+                play_circle
+                </span>
+                <span class="material-symbols-outlined hidden" id="music_pause">
+                    pause_circle
+                    </span>
+              <span class="material-symbols-outlined"> skip_next </span>
+              <span class="material-symbols-outlined"> graphic_eq </span>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
 
     <script src="js/greetings.js"></script>
     <script src="js/clock.js"></script>
     <script src="js/background.js"></script>
     <script src="js/todo.js"></script>
+    <script src="js/calender.js"></script>
     <script src="js/weather.js"></script>
+    <script src="js/google.js"></script>
+    <script src="js/play.js"></script>
   </body>
 </html>

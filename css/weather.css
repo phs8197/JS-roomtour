@@ -1,0 +1,18 @@
+#weather {
+  z-index: 20;
+  display: flex;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+#weather span {
+  color: white;
+  margin-top: 40px;
+  font-size: 20px;
+}
+#weather span:first-child {
+  margin-left: 200px;
+}
+#weather span:last-child {
+  margin-left: 10px;
+}
