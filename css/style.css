@@ -150,7 +150,7 @@ img {
   cursor: pointer;
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1000px) {
   body {
     background-color: blanchedalmond;
     display: flex;
@@ -166,7 +166,7 @@ img {
     display: none;
   }
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1000px) {
   h3 {
     display: none;
     font-size: 35px;
