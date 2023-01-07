@@ -44,9 +44,9 @@
 
 
 <!-- Stack Icon Refernces -->
-[html]: /public/stack/html.svg
-[css]: /public/stack/css.svg
-[figma]: /public/stack/figma.svg
-[ts]: /public/stack/typescript.svg
-[react]: /public/stack/react.svg
-[node]: /public/stack/node.svg
+[html]: /image/stack/html.svg
+[css]: /image/stack/css.svg
+[figma]: /image/stack/figma.svg
+[ts]: /image/stack/typescript.svg
+[react]: /image/stack/react.svg
+[node]: /image/stack/node.svg
