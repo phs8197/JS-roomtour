@@ -33,9 +33,9 @@
 
 ## 기술 스택
 
-|    html    |     css    |     javascript.   |
-| :--------: | :--------: | :--------:   |
-|  ![html]   |   ![css]   |   ![js].  |
+|    html    |     css    |     javascript   |      figma    |
+| :--------: | :--------: | :--------:   |    :--------:   |   
+|  ![html]   |   ![css]   |   ![js]  |  ![figma]   |   
 
 <br>
 
