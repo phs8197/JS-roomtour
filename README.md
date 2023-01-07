@@ -35,7 +35,7 @@
 
 |    html    |     css    |     javascript.   |
 | :--------: | :--------: | :--------:   |
-|  ![html]   |   ![css]   |   ![javascript].  |
+|  ![html]   |   ![css]   |   ![js].  |
 
 <br>
 
@@ -56,6 +56,6 @@
 [css]: /image/stack/css.svg
 [figma]: /image/stack/figma.svg
 [ts]: /image/stack/typescript.svg
-[javasript]: /image/stack/javascript.svg
+[js]: /image/stack/javascript.svg
 [react]: /image/stack/react.svg
 [node]: /image/stack/node.svg
