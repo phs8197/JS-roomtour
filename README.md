@@ -1,5 +1,7 @@
-# 리액트 사이트 2 (React site)<br>
-### 각 종 API를 활용하여 만든 리액트 사이트입니다.
+# Room tour <br>
+### html, css, javascript로 만든 프로젝트입니다. <br>
+평소에 방 인테리어에 관심이 많아서 떠오르는 아이디어입니다. <br>
+각 이미지에 맞게 기능들을 구현하였습니다.
 <p align="space-between" style="display: flex;">
   <br>
   <img src="./image/11.png" width="32.5%">
@@ -14,22 +16,26 @@
 
 ## 구현 기능
 
-<li>movie API, YouTube API, unsplash API 활용</li> 
+<li>Math 메서드를 활용하여 랜덤 백그라운드 이미지 구현 </li> 
 
-<li>useState, useEffect와 같은 Hooks 사용</li> 
+<li>Date 메서드를 활용하여 달력, 시계 기능 구현 </li> 
 
-<li>map 배열 메소드를 이용하여 컴포넌트를 반복화하여 생성</li> 
+<li>iframe 태그를 활용하여 src에 맞는 화면 구현 </li> 
 
-<li>async, awite 함수를 이용하여 비동기 방식으로 데이터를 받기</li> 
+<li>Audio 태그를 활용하여 뮤직플레이어 기능 구현 </li> 
+
+<li>localStorage에 저장되는 to-do-list 구현 </li> 
+
+<li>실시간 날씨와 사용자 위치정보를 알 수 있는 기능 구현</li> 
 <br>
 
 <br>
 
 ## 기술 스택
 
-|    html    |     css    |     react.   |
+|    html    |     css    |     javascript.   |
 | :--------: | :--------: | :--------:   |
-|  ![html]   |   ![css]   |   ![react].  |
+|  ![html]   |   ![css]   |   ![javascript].  |
 
 <br>
 
@@ -50,5 +56,6 @@
 [css]: /image/stack/css.svg
 [figma]: /image/stack/figma.svg
 [ts]: /image/stack/typescript.svg
+[js]: /image/stack/javascript.svg
 [react]: /image/stack/react.svg
 [node]: /image/stack/node.svg
